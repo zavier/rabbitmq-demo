@@ -1,0 +1,14 @@
+# RabbitMQ 安装
+
+Windows 下[安装教程](http://www.rabbitmq.com/install-windows-manual.html)
+
+1. 下载 RabbitMQ
+2. 下载 Erlang
+3. 运行安装 Erlang
+4. 设置 Erlang 的环境变量 ERLANG_HOME 为安装的跟路径
+5. 运行安装 RabbitMQ
+6. 之后可运行 RabbitMQ sbin 目录下的 rabbitmq-service stop | start | remove 等命令
+
+安装 RabbitMQ 管理界面
+1. 在 sbin 目录下运行 rabbitmq-plugins enable rabbitmq_management
+2. 在浏览器中访问：http://localhost:15672，用户名和密码都是 guest
