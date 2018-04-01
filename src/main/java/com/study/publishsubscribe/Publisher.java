@@ -15,6 +15,7 @@ public class Publisher {
 
         String message = "Hello World!";
 
+        // type = fanout, 扇型交换机，会把发送给它的消息传递给绑定的所有队列
         channel.exchangeDeclare("logs", "fanout");
 
         channel.basicPublish("logs", "", null, message.getBytes());
